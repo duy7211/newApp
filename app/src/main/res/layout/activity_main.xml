@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/viewToggle"
+        android:layout_width="193dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:text="Hello Everybody"
+        android:textSize="25dp"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnToggle"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Hello Everybody" />
+
+    <ToggleButton
+        android:id="@+id/btnToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="ToggleButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/sw1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:text="Switch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnToggle" />
+
+    <TextView
+        android:id="@+id/tvsw"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:textSize="25dp"
+        app:layout_constraintStart_toEndOf="@+id/sw1"
+        app:layout_constraintTop_toBottomOf="@+id/viewToggle" />
+
+    <CheckBox
+        android:id="@+id/cbBongda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        android:text="Bóng đá"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sw1" />
+
+    <CheckBox
+        android:id="@+id/cbBongchuyen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
+        android:text="Bóng chuyền"
+        app:layout_constraintStart_toEndOf="@+id/cbBongda"
+        app:layout_constraintTop_toBottomOf="@+id/tvsw" />
+
+    <CheckBox
+        android:id="@+id/cbCaulong"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="cầu lông"
+        app:layout_constraintStart_toEndOf="@+id/cbBongchuyen"
+        app:layout_constraintTop_toBottomOf="@+id/tvsw" />
+
+    <RadioGroup
+        android:id="@+id/radiobtn"
+        android:layout_width="228dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="36dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbBongchuyen">
+
+        <RadioButton
+            android:id="@+id/radiobtnNam"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+
+            android:text="Nam" />
+
+        <RadioButton
+            android:id="@+id/radiobtnNu"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:text="Nữ" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        android:text="Giới tính"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/radiobtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbBongda" />
+
+</android.support.constraint.ConstraintLayout>
